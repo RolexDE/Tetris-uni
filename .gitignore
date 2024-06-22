@@ -1,54 +1,113 @@
-# C++ objects and libs
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
-*.so
-*.so.*
-*.dll
-*.dylib
+# Ignoriere den build-Ordner, der von der IDE erstellt wird
+build/
+Build/
+cmake-build-debug/
+cmake-build-release/
 
-# Qt-es
-object_script.*.Release
-object_script.*.Debug
-*_plugin_import.cpp
-/.qmake.cache
-/.qmake.stash
+# Ignoriere temporäre Qt Creator-Dateien
 *.pro.user
-*.pro.user.*
-*.qbs.user
-*.qbs.user.*
+*.qtc
+
+# Ignoriere generierte Dateien von Qt (MOC, UIC, RCC)
 *.moc
+*.qrc
+*.rcc
+*_automoc.cpp
+*_autogen/
+*_autogen_include/
+*_ui.cpp
+*_uic.cpp
+
+# Ignoriere kompiliertes Output und Binärdateien
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.app
+*.pdb
+*.ilk
+*.idb
+
+# Ignoriere temporäre und Log-Dateien
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.swn
+*.bak
+*.~*
+
+# Ignoriere IDE- und Editor-spezifische Dateien
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.ipch
+*.aps
+*.ncb
+*.suo
+*.user
+*.sdf
+*.opendb
+*.tlog
+*.vscode/
+
+# Ignoriere Makefile und andere generierte Dateien
+Makefile
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Ignoriere Backup- und temporäre Dateien von Texteditoren
+*~
+*.bak
+*.swp
+*.tmp
+*.temp
+*.sublime-workspace
+*.sublime-project
+
+# Ignoriere Debug- und Profiling-Dateien
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
+
+# Ignoriere Qt Creator Cache-Dateien
+*.qmake.stash
+*.pro.user.*
+*.qmake.cache
+
+# Ignoriere Dateien, die durch MOC/UIC/RCC generiert werden
 moc_*.cpp
-moc_*.h
 qrc_*.cpp
 ui_*.h
-*.qmlc
-*.jsc
-Makefile*
-*build-*
-*.qm
-*.prl
 
-# Qt unit tests
-target_wrapper.*
+# Ignoriere Coverage-Dateien
+*.gcov
+*.gcda
+*.gcno
 
-# QtCreator
-*.autosave
+# Ignoriere spezifische Betriebssystemdateien
+*.db
+*.log
+*.sqlite
+*.sqlite3
+*~
 
-# QtCreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
-
-# QtCreator CMake
-CMakeLists.txt.user*
-
-# QtCreator 4.8< compilation database
-compile_commands.json
-
-# QtCreator local machine specific files for imported projects
-*creator.user*
-
-*_qmlcache.qrc
+# Ignoriere spezifische Paketmanager-Dateien
+node_modules/
+dist/
+build/
+coverage/
